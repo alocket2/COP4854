@@ -1,0 +1,25 @@
+<div class="container-fluid" (click)="clickedTheScreen($e)">
+  <div class="row">
+    <div class="col-md-2 col-sm-4 sidebar">
+      <h4 class="brand"><i class="fa fa-bookmark bookmark-icon"></i>Bookmark Manager</h4>
+      <div class="add-button-container">
+        <button class="add-folder"><i class="fa fa-plus add-fa-button" aria-hidden="true"></i>New Folder</button>
+      </div>
+      <ul class="bookmark-folders">
+        <li *ngFor=" let folder of folders" class="folder-li">
+          <div class="folder-container">
+            <a href="#" class="folder folder-active"><i class="folder-icon {{folder.icon}}"></i>{{folder.name }}</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="col-sm-12 main-content">
+      <form (submit)="addFolder()">
+        <div class="folder-input-container">
+         <i class="fa fa-folder-o fa-2x new-folder-icon"><input type="text" placeholder="New Folder" name="folderName" class="new-folder-input" [(ngModel)]="name"></i>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+

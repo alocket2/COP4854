@@ -1,0 +1,149 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.tagline {
+  font-family: 'Flavors', cursive;
+  font-size: 5.5em;
+  margin-top: 125px;
+  color: gray;
+}
+
+.projects {
+  border: none;
+  padding: 10px 60px;
+  background-color: #5D61B2;
+  border-radius: 25px;
+  font-family: 'Flavors', cursive;
+  color: white;
+  letter-spacing: 0.1em;
+  outline: 0 !important;
+}
+
+.projects:hover {
+  background-color: #a8abdf;
+}
+
+#projContainer {
+    position: absolute;
+    padding: 0px;
+    width: 100%;
+    height: 375px;
+    bottom: 0;
+    display: none;
+}
+
+.proj_info {
+  color: white;
+}
+
+.proj_number {
+  margin-top: 30%;
+}
+
+.proj {
+  height: 375px;
+}
+
+.proj2 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.50),
+      rgba(0, 0, 0, 0.50)
+    ),
+    url('../images/proj2_background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.proj3 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.50),
+      rgba(0, 0, 0, 0.50)
+    ),
+    url('../images/proj3_background.png');
+  background-repeat: none;
+  background-size: cover;
+}
+
+.proj4 {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.50),
+      rgba(0, 0, 0, 0.50)
+    ),
+    url('../images/proj4_background.png');
+  background-repeat: none;
+  background-size: cover;
+}
+
+
+
+/* Bootstrap Custom Styles */
+.navbar {
+  background-color: transparent;
+}
+
+.navbar-brand {
+  font-family: 'Flavors', cursive;
+  font-size: 2.5em;
+}
+
+.navbar .navbar-brand {
+  color: gray;
+}
+
+.navbar .navbar-brand:hover {
+  color: gray;
+}
+
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .tagline {
+    font-size: 4.5em;
+  }
+
+}
+
+@media (max-width: 992px) {
+  .tagline {
+    font-size: 3.5em;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .proj_info {
+    margin-top: 40%;
+  }
+  .proj_number {
+    font-size: 2em;
+  }
+
+  .proj_title {
+    font-size: 2.45em;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .tagline {
+    margin-left: 50px;
+    font-size: 2.7em;
+  }
+
+  .projects {
+    margin-left: 85px;
+  }
+
+  .proj_info {
+    margin-top: 40%;
+  }
+  .proj_number {
+    font-size: 2em;
+  }
+
+  .proj_title {
+    font-size: 2.45em;
+  }
+}
