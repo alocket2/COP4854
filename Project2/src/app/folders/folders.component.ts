@@ -18,7 +18,7 @@ export class FoldersComponent implements OnInit {
       {
         name: 'Favorites',
         icon: 'fa fa-star',
-        bokmarks: []
+        bookmarks: ["Bookmark1", "Bookmark2", "Bookmark3"]
       }
     ];
   }

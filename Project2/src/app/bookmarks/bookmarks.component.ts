@@ -6,19 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./bookmarks.component.css']
 })
 export class BookmarksComponent implements OnInit {
-  bookmarks;
   constructor() { }
 
   ngOnInit() {
-    this.bookmarks = [
-      {
-      text: 'Favorite Sites'
-     },
-     {
-       text: 'www.apple.com'
-     }
-
-    ];
   }
 
 }

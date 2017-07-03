@@ -1,0 +1,19 @@
+<div class="contact-detail">
+    <div *ngIf="contact; else noContact">
+        <h1 class="contact-name">{{ contact.firstname + " " + contact.lastname }}</h1>
+        <div class="contact-information">
+            <p class="contact-email">Email: {{ contact.email }}</p>
+            <p class="contact-mobile">Phone (Mobile): {{ contact.mobile }}</p>
+            <p class="contact-address">Address: {{ contact.address }}</p>
+            <p class="contact-twitter">Twitter: {{ contact.twitter }}</p>
+        </div>
+
+        <div class="config">
+            <a (click)="onEdit()">Edit</a>
+            <a (click)="onDelete()">Delete</a>
+        </div>
+    </div>
+    <ng-template #noContact>
+        <app-contact-welcome></app-contact-welcome>
+    </ng-template>
+</div>

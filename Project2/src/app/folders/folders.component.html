@@ -17,6 +17,13 @@
       <form (submit)="addFolder()">
         <div class="folder-input-container">
          <i class="fa fa-folder-o fa-2x new-folder-icon"><input type="text" placeholder="New Folder" name="folderName" class="new-folder-input" [(ngModel)]="name"></i>
+         <ul>
+           <li *ngFor="let folder of folders">
+            <div *ngFor="let bookmar of folder.bookmarks">
+              <a href="#">{{bookmar}}</a>
+            </div>
+           </li>
+         </ul>
         </div>
       </form>
     </div>

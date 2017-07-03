@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .navbar-nav {
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+.contact-list {
+  margin-top: 70px;
+}
+
+.contact-list .contact-list-ul {
+  display: inline;
+}
+
+.contact-list .contact-list-ul .contact {
+  
+}
+
+.contact-list .contact-list-ul .contact:hover {
+  background-color: #f8f8ff;
+}
+
+h1 {
+  margin-bottom: 20px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid #eee;
+}
+
+.contact-detail {
+  margin-top: 70px;
+}

@@ -1,0 +1,7 @@
+<div class="contact-list">
+    <h2>Contacts</h2>
+    <hr>
+    <ul class="contact-list-ul nav nav-pills" >
+        <li class="contact" *ngFor="let contact of contacts" routerLinkActive="active"><i class="fal fa-star"></i><a (click)="selectedChange.next(contact)">{{ contact.firstname + " " + contact.lastname }}</a></li>
+    </ul>
+</div>
